@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "LORA-breakboard-module") (type "KiCad") (uri "G:/kicad_symbols/LORA-breakboard-module.pretty") (options "") (descr ""))
+)
