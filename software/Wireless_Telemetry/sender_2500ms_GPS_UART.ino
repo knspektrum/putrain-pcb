@@ -142,4 +142,3 @@ void loop() {
 
   stmBuf[0] = '\0'; 
 }
-
