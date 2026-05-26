@@ -1,0 +1,3 @@
+Receiver odbiera wiadomosci i wysyła po UAERT dalej
+
+Sender trzeba dopracować doklładnie to co chcą itd
