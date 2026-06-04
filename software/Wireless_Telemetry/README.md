@@ -37,3 +37,22 @@ wraz z nadajnaikiem fąlszywym idziemy wzdluż toru
 jesetsemy na łączu z osoba z odbornikiem jej zadaniem jest dawanie znac czy counter sie zwieksza jezeli sie nie zwieksza to osoba daje znac
 wtedy ktos z nadajnikiem staje w miejscu/przesuwa sie do momentu gdy stracony został zasieg
 osoba z repeater (włącza go ) i probuje tak ustawic aby odbieornik zow odbieral gdy odbiera to idziemy dalej
+
+## STM32 telemetry simulator
+
+Jeśli nie masz podłączonego STM32, możesz zasymulować jego dane po UART.
+
+Wymagane połączenie:
+- adapter UART TX -> ESP32 GPIO38 (RX1)
+- adapter UART RX <- ESP32 GPIO40 (TX1)
+- wspólna masa GND
+
+Uruchomienie:
+```bash
+nix shell nixpkgs#python3Packages.pyserial -c python3 simulate_stm32_uart.py --port /dev/ttyUSB0
+```
+
+Przykładowa ramka:
+```text
+Z72 H1 C35 O0 B20 P1 F0 T26
+```
